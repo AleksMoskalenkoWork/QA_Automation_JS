@@ -11,7 +11,7 @@ export default [
 	{
 		rules: {
 			'valid-typeof': 'warn',
-			'no-unused-vars': 'warn',
+			'no-unused-vars': 'off',
 			'no-debugger': 'warn',
 		},
 	},
