@@ -8,19 +8,19 @@
 // Викличте функцію handleNum і передайте в якості аргументів довільне число і дві функції які ви створили раніше
 
 const handleEven = () => {
-  console.log('number is even');
+	console.log('number is even');
 };
 
 const handleOdd = () => {
-  console.log('number is odd');
+	console.log('number is odd');
 };
 
 const handleNum = (number, isEvenCB, isOddCB) => {
-  if (number % 2 === 0) {
-    isEvenCB();
-  } else {
-    isOddCB();
-  }
+	if (number % 2 === 0) {
+		isEvenCB();
+	} else {
+		isOddCB();
+	}
 };
 
 handleNum(5, handleEven, handleOdd);

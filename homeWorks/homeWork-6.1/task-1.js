@@ -7,14 +7,14 @@
 
 // function declaration
 function areaRectangleDeclaration(width, height) {
-  return width * height;
+	return width * height;
 }
 
 console.log(areaRectangleDeclaration(10, 30));
 
 // function expression
 const areaRectangleExpression = function (width, height) {
-  return width * height;
+	return width * height;
 };
 
 console.log(areaRectangleExpression(10, 40));

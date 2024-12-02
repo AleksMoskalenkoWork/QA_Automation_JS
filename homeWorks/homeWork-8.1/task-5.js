@@ -13,6 +13,4 @@ const secondArray = [2, 4, 6, 8];
 
 const concatArray = [];
 
-console.log(
-  `Об'єднаний масив: ${concatArray.concat(...firstArray, ...secondArray)}`
-);
+console.log(`Об'єднаний масив: ${concatArray.concat(...firstArray, ...secondArray)}`);
