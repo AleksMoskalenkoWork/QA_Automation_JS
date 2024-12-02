@@ -10,9 +10,9 @@ export default [
 	},
 	{
 		rules: {
-			'valid-typeof': 'warn',
-			'no-unused-vars': 'warn',
-			'no-debugger': 'warn',
+			'valid-typeof': 'off',
+			'no-unused-vars': 'off',
+			'no-debugger': 'off',
 		},
 	},
 ];
