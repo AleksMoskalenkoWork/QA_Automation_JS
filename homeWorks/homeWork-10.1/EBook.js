@@ -5,33 +5,31 @@ import { Book } from './Book.js';
 // Створіть статичний метод для EBook який буде приймати як аргументи екземпляр класу Book і формат файлу як рядок ****та повертати екземпляр класу EBook
 
 export class EBook extends Book {
-  constructor(title, author, year, fileFormat) {
-    super(title, author, year);
-    this.fileFormat = fileFormat;
-  }
+	constructor(title, author, year, fileFormat) {
+		super(title, author, year);
+		this.fileFormat = fileFormat;
+	}
 
-  get fileFormat() {
-    return this._fileFormat;
-  }
+	get fileFormat() {
+		return this._fileFormat;
+	}
 
-  set fileFormat(value) {
-    if (typeof value === '' || typeof value !== 'string') {
-      console.log(
-        'Значення має містити формат файлу (наприклад PDF, XLSX, DOXS)'
-      );
-    }
-    this._fileFormat = value;
-  }
+	set fileFormat(value) {
+		if (typeof value === '' || typeof value !== 'string') {
+			console.log('Значення має містити формат файлу (наприклад PDF, XLSX, DOXS)');
+		}
+		this._fileFormat = value;
+	}
 
-  static createInstanceFromBook(book, fileFormat) {
-    return new EBook(book.title, book.author, book.year, fileFormat);
-  }
+	static createInstanceFromBook(book, fileFormat) {
+		return new EBook(book.title, book.author, book.year, fileFormat);
+	}
 
-  printInfo() {
-    console.log(
-      `Назва: ${this.title}, Автор: ${this.author}, Рік видання: ${this.year}, Формат файлу: ${this.fileFormat}`
-    );
-  }
+	printInfo() {
+		console.log(
+			`Назва: ${this.title}, Автор: ${this.author}, Рік видання: ${this.year}, Формат файлу: ${this.fileFormat}`,
+		);
+	}
 }
 
 // const eBook = new EBook('Зелена миля', 'Стівен Кінг', 1996, 'PDF');
