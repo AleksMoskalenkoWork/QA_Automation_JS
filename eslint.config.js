@@ -13,6 +13,7 @@ export default [
 			'valid-typeof': 'warn',
 			'no-unused-vars': 'off',
 			'no-debugger': 'warn',
+			'no-undef': 'warn',
 		},
 	},
 ];
